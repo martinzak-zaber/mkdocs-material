@@ -164,7 +164,7 @@
   }
 
   // [tablet -]: Layered navigation
-  @include break-to-device(tablet) {
+  @include break-to-device(tablet portrait) {
     background-color: $md-color-white;
 
     // Stretch primary navigation to drawer
@@ -463,7 +463,7 @@
   }
 
   // [screen +]: Tree-like navigation
-  @include break-from-device(screen) {
+  @include break-from-device(tablet landscape) {
 
     // Animation is only possible if JavaScript is available, as the max-height
     // property must be calculated before transitioning

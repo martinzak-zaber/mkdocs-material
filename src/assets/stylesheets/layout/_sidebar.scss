@@ -51,7 +51,7 @@ $md-toggle__drawer--checked:
   }
 
   // [tablet -]: Convert navigation to drawer
-  @include break-to-device(tablet) {
+  @include break-to-device(tablet portrait) {
 
     // Render primary sidebar as a slideout container
     &--primary {
@@ -107,7 +107,7 @@ $md-toggle__drawer--checked:
     display: none;
 
     // [tablet landscape +]: Show table of contents next to body copy
-    @include break-from-device(tablet landscape) {
+    @include break-from-device(screen) {
       display: block;
       margin-left: 100%;
       transform: translate(-100%, 0);
@@ -142,7 +142,7 @@ $md-toggle__drawer--checked:
     backface-visibility: hidden;
 
     // [tablet -]: Adjust margins
-    @include break-to-device(tablet) {
+    @include break-to-device(tablet portrait) {
 
       // Stretch scrollwrap for primary sidebar
       .md-sidebar--primary & {

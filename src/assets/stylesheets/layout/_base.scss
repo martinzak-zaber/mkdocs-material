@@ -159,7 +159,7 @@ hr {
   z-index: 3;
 
   // [tablet -]: Trigger overlay
-  @include break-to-device(tablet) {
+  @include break-to-device(tablet portrait) {
 
     // Expanded drawer
     #{$md-toggle__drawer--checked} & {
