@@ -29,22 +29,22 @@
 
   // [tablet landscape +]: Add space for table of contents
   @include break-from-device(tablet landscape) {
-    margin-right: px2rem(242px);
-
-    // Adjust for RTL languages
-    [dir="rtl"] & {
-      margin-right: initial;
-      margin-left: px2rem(242px);
-    }
-  }
-
-  // [screen +]: Add space for table of contents
-  @include break-from-device(screen) {
     margin-left: px2rem(242px);
 
     // Adjust for RTL languages
     [dir="rtl"] & {
       margin-right: px2rem(242px);
+      margin-left: initial;
+    }
+  }
+
+  // [screen +]: Add space for table of contents
+  @include break-from-device(screen) {
+    margin-right: px2rem(242px);
+
+    // Adjust for RTL languages
+    [dir="rtl"] & {
+      margin-left: px2rem(242px);
     }
   }
 
